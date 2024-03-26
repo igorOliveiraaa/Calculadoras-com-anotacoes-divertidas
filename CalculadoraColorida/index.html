@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calc</title>
+    <link rel="stylesheet" href="a.css" />
+  </head>
+  <body>
+    <div id="calc">
+      <div id="operations">
+        <h1 class="anotacoes">Calculadora</h1>
+        <div id="current-operation"></div>
+        <div id="previous-operation"></div>
+        <br>
+      </div>
+      <div id="buttons-container">
+        
+        <button class="btn-red">DEL</button>
+        <button class="btn-red">C</button>
+        <button class="btn-contas">%</button>
+        <button class="btn-contas">÷</button>
+        
+
+        
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="btn-contas">x</button>
+        
+
+        
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="btn-contas">-</button>
+
+        
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="btn-contas">+</button>
+
+       
+        <button class="number">0</button>
+        <button class="number">.</button>
+        <button colspan="2" style="width: 160px; height:80px; left:178px; top:586px; border-radius: 40px;" id="equal-btn" onclick="calcular()" >=</button>     
+        </div>
+
+
+        <script src="a.js" defer></script>
+
+        <div>
+          <table>
+            <tr>
+        <td><p class="anotacoes2">Anotações</p></td>
+        <td><button class="copiar" onclick="copiartexto()">Copiar Texto </button></td>
+            </tr>
+          </table>
+
+        <form>
+            <textarea class="caixadeanotacoes" name="texto" id="texto" cols="30" rows="10" oninput="countText()"></textarea> 
+         </form>
+        </div>
+      </div>
+
+
+      <script>
+        function copiartexto() {
+            let textoCopiado = document.getElementById("texto");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 9999999999999999999999999);
+            document.execCommand("copy");
+        }
+    </script>
+   </div>
+    </div>
+  </body>
+</html>

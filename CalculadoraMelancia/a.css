@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+*{
+    font-family: 'Comic Neue', cursive;
+    margin:0;
+    padding:0;   
+}
+  
+  body {
+    background-color: #FFCACA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #calc {
+    width: 100%;
+    padding: 0.5em;
+    background-image: url(FundoMelancia.png);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+  #calc h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  #operations {
+    text-align: right;
+  }
+  
+  #previous-operation {
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.4em;
+    margin: 10px;
+    width: 90%;
+    color: #869B4A;
+    background: rgba(255, 255, 255, 0.904);
+    border-radius: 15px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+    padding: 10px;
+    font-size: 40px;
+  }
+  
+  #current-operation {
+    margin: 10px;
+    width: 90%;
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    margin: 5px;
+    color: #FF8B8B;
+    background: rgba(255, 255, 255, 0.74);
+    font-size: 40px;
+    left: 10px;
+    padding: 10px;
+    top: 84px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+
+  }
+  
+  #buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  #buttons-container button {
+    -webkit-tap-highlight-color: transparent;
+
+    background-color: #FF8B8B;
+    color: #fff;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    align-items: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+}
+  
+  #buttons-container .number {
+    background-color: #869B4A;
+  }
+  
+  .btn-contas{
+    background: #FF8B8B;
+    color: white;
+  }
+
+  .anotacoes{
+    text-align: center;
+    background: #869B4A;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+    height:38px; 
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+    border: none;
+    outline: none;
+  }
+
+
+  .anotacoes2{
+    text-align: center;
+    background: #FF8B8B;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    width: 160px;
+    height:38px; 
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+    border: none;
+    outline: none;
+  }
+
+  .caixadeanotacoes{
+    font-family: 'Comic Neue', cursive;;
+    width: 90%;
+    height: 1600px;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+    background: rgba(255, 255, 255, 0.918);
+    font-size: 25px;
+    left: 15px;
+    padding: 10px;
+    top: 84px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.200);
+    text-align: left;
+    border: none;
+    outline: none;
+  }
+
+
+  #buttons-container #equal-btn {
+    color: #fff;
+    grid-column: span 2;
+    background: #FF8B8B;
+  }
+  
+
+  .copiar{
+    text-align: center;
+    background:#869B4A;
+    color: #fff;
+    font-size: 15px;
+    padding: 3px;
+    margin: 5px;
+    width: 120px;
+    height:35px; 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+

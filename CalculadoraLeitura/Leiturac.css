@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;   
+}
+
+body{
+    background:#292ff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.CalculadoraLeitura{
+    position: absolute;
+    background-color: #292ff1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo-calculadora{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.digiteotexto{
+    font-size: 20px;
+}
+
+.caixadetexto{
+    width: 320px;
+    height: 360px;
+    margin: 5px;
+    color: black;
+    background: white;
+    font-size: 15px;
+    left: 15px;
+    top: 84px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.200);
+    text-align: left;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.btn-velocidade{
+    background-color: #fff;
+    color: black;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(0, 8, 77, 0.767);
+    color: white;
+ }
+
+#resultado{
+    width: 240px;
+    text-align: left;
+    padding: 5px;
+    height: 40px;
+    padding-top:18px ;
+    margin: 10px;
+    color: black;
+    background: white;
+    font-size: 20px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.200);
+}

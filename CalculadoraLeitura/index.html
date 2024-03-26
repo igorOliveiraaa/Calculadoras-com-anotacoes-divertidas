@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular tempo de leitura</title>
+    <script src="Leiturac.js" type="text/javascript"></script>
+    <link rel="Stylesheet" type="text/css" href="Leiturac.css">
+</head>
+
+<body>
+    <div class="CalculadoraLeitura">
+        <img src="LOGOLEITURA.png" width="250px"/>
+        <br/>
+
+        <form name="form_main">
+            <label class="titulo-calculadora" for="text">Digite o texto aqui:</label> <br>
+            <textarea class="caixadetexto" name="text" id="text" cols="30" rows="10" oninput="countText()"></textarea>
+            <br>
+            <label for="words">Palavras: </label><span id="words"></span> <br>
+        </form>
+
+        <br/>
+
+        <p class="digiteotexto">Selecione a velocidade de leitura</p>
+        <tr>
+            <td><button onclick="pausado()" id="pausado" class="btn-velocidade">PAUSADO</button></td>
+            <td><button onclick="normal()"  id="normal" class="btn-velocidade">NORMAL</button></td>
+            <td><button onclick="rapido()" id="rapido" class="btn-velocidade">RÁPIDO</button></td>
+        </tr>
+        <br />
+        <br />
+        <br />
+
+        <p class="digiteotexto">Estimativa de tempo:</p>
+        <p id="resultado"> </p>
+    </div>
+</body>
+</html>
